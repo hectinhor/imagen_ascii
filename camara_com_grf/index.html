@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fotos UDEC</title>
+	<script src = "scrip.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<video id="video"></video>
+	<canvas id="canvas"></canvas>
+	
+	<div id="container">
+		<pre id="ascii"></pre>
+	</div>
+	
+	<hr>
+	<button id="boton">Tomar Foto</button>
+	<br>
+	<!--Efecto://--> 
+	<select id = "efectos">
+	  <option value="0">Ninguno</option>
+	  <option value="1">Blanco y negro</option>
+	  <option value="2">Sephia</option>
+	  <option value="3">Negativo</option>
+	  <option value="4">Ruido</option>
+	  <option value="5">Azul/Verde/Rojo</option>
+	  <option value="6">Sin Verde</option>
+	  <option value="7">Gama</option>
+	  <option value="8">gravilla</option>
+	  <option value="9">azulado</option>
+	  <!-- <option value="7">Ascii</option> //-->
+	</select>
+	<br>
+	<label>alfa   </label>  
+	<!--Alfa://-->  
+	<input color="yellow " type="range" id = "alfa" min = "10" max="255" value = '255'>
+	<br>
+	<!--Gama: //-->
+	<label>gama   </label>  
+	<input type="range" id = "gama" min = "1" max="10" value = '1'>
+	<hr>
+	<br>
+	<!--greavilla://-->
+	<label font-color="yellow">gravilla   </label>  
+	<input type="range" id = "gravilla" min = "10" max="100" value = '10'>
+	<br>
+	<!--azulado: //-->
+	<label>azulado   </label>  
+	<input type="range" id = "azulado" min = "1" max="100" value = '1'>
+	<hr>
+	<br>
+	<center>
+
+		<a href = '#' id = "descarga" download = "estadisticaUDEC.png">
+			<!--Descargar foto//-->
+		</a>
+	</center>
+	<button id="cambio" color ="blue">imagen ascii</button>
+</body>
+</html>
